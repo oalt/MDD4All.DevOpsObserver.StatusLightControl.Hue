@@ -4,6 +4,9 @@ using System.Threading.Tasks;
 
 namespace MDD4All.DevOpsObserver.StatusLightControl.Hue
 {
+    /// <summary>
+    /// Mickup class for Hue light contreoller. Used when no hardware is connected.
+    /// </summary>
     public class MockupHueLightController : IStatusLightController
     {
         public DevOpsStatus CurrentStatus { get; private set; } = DevOpsStatus.Unknown;
